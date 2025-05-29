@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АвтоПрокат - FAQ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">АвтоПрокат</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terms.html">Условия аренды</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Бронирование</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Часто задаваемые вопросы</h1>
+
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="accordion" id="faqAccordion">
+                    <!-- Общие вопросы -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                Какие документы нужны для аренды автомобиля?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Для аренды автомобиля вам потребуются:
+                                <ul>
+                                    <li>Паспорт гражданина РФ</li>
+                                    <li>Водительское удостоверение категории B</li>
+                                    <li>Страховой полис ОСАГО (если есть)</li>
+                                    <li>Справка о доходах или справка с места работы</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Какой минимальный возраст для аренды автомобиля?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Минимальный возраст для аренды автомобиля - 21 год. Также требуется стаж вождения не менее 2 лет.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вопросы по оплате -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Какие способы оплаты доступны?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Мы принимаем следующие способы оплаты:
+                                <ul>
+                                    <li>Наличные</li>
+                                    <li>Банковские карты (Visa, MasterCard, МИР)</li>
+                                    <li>Безналичный расчет для юридических лиц</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вопросы по бронированию -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                Как забронировать автомобиль?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Вы можете забронировать автомобиль следующими способами:
+                                <ul>
+                                    <li>Через форму бронирования на нашем сайте</li>
+                                    <li>По телефону: +7 (999) 123-45-67</li>
+                                    <li>В офисе компании</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вопросы по страховке -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                Какая страховка включена в стоимость аренды?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                В стоимость аренды включена базовая страховка, которая покрывает:
+                                <ul>
+                                    <li>Ущерб третьим лицам</li>
+                                    <li>Ущерб от ДТП</li>
+                                    <li>Угон автомобиля</li>
+                                </ul>
+                                Дополнительно вы можете приобрести расширенную страховку.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вопросы по возврату -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                Что делать при повреждении автомобиля?
+                            </button>
+                        </h2>
+                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                В случае повреждения автомобиля необходимо:
+                                <ul>
+                                    <li>Немедленно связаться с нами по телефону</li>
+                                    <li>Не покидать место происшествия</li>
+                                    <li>Дождаться приезда нашего представителя</li>
+                                    <li>Заполнить все необходимые документы</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Контакты</h5>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                    <p>Email: info@autoprokat.ru</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Адрес</h5>
+                    <p>г. Москва, ул. Примерная, д. 123</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Режим работы</h5>
+                    <p>Пн-Вс: 9:00 - 21:00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

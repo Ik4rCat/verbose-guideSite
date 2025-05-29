@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АвтоПрокат - Бронирование</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">АвтоПрокат</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terms.html">Условия аренды</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="booking.html">Бронирование</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Бронирование автомобиля</h1>
+
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <!-- Выбор автомобиля -->
+                            <div class="mb-4">
+                                <h3>Выбор автомобиля</h3>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="carClass" class="form-label">Класс автомобиля</label>
+                                        <select class="form-select" id="carClass" required>
+                                            <option value="">Выберите класс</option>
+                                            <option value="economy">Эконом</option>
+                                            <option value="comfort">Комфорт</option>
+                                            <option value="business">Бизнес</option>
+                                            <option value="premium">Премиум</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="carModel" class="form-label">Модель</label>
+                                        <select class="form-select" id="carModel" required>
+                                            <option value="">Выберите модель</option>
+                                            <option value="camaro">Chevrolet Camaro</option>
+                                            <option value="bmw">BMW 3 Series</option>
+                                            <option value="mercedes">Mercedes E-Class</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Даты аренды -->
+                            <div class="mb-4">
+                                <h3>Даты аренды</h3>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="startDate" class="form-label">Дата начала</label>
+                                        <input type="date" class="form-control" id="startDate" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="endDate" class="form-label">Дата окончания</label>
+                                        <input type="date" class="form-control" id="endDate" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Личные данные -->
+                            <div class="mb-4">
+                                <h3>Личные данные</h3>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Имя</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="surname" class="form-label">Фамилия</label>
+                                        <input type="text" class="form-control" id="surname" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Телефон</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Дополнительные услуги -->
+                            <div class="mb-4">
+                                <h3>Дополнительные услуги</h3>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="childSeat">
+                                    <label class="form-check-label" for="childSeat">
+                                        Детское кресло (500 ₽/день)
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="gps">
+                                    <label class="form-check-label" for="gps">
+                                        GPS-навигатор (300 ₽/день)
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="additionalDriver">
+                                    <label class="form-check-label" for="additionalDriver">
+                                        Дополнительный водитель (1000 ₽/день)
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Комментарий -->
+                            <div class="mb-4">
+                                <label for="comment" class="form-label">Комментарий к заказу</label>
+                                <textarea class="form-control" id="comment" rows="3"></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Забронировать</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Контакты</h5>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                    <p>Email: info@autoprokat.ru</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Адрес</h5>
+                    <p>г. Москва, ул. Примерная, д. 123</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Режим работы</h5>
+                    <p>Пн-Вс: 9:00 - 21:00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
