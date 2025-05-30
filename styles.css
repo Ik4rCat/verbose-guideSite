@@ -59,7 +59,16 @@ footer h5 {
     border-radius: 30px;
 }
 
-/* Адаптивность для мобильных устройств */
+/* Стили для карточек и изображений */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
 @media (max-width: 768px) {
     .hero-section {
         padding: 60px 0;
